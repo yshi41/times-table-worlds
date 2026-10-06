@@ -1,0 +1,8 @@
+{
+  "name": "times-table-worlds-test",
+  "private": true,
+  "description": "Headless Chrome checks for Times Table Worlds: node test.js ../index.html",
+  "devDependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}
