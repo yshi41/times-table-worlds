@@ -17,7 +17,11 @@ let ready = null;
 function json(body, status = 200) {
   return new Response(JSON.stringify(body), { status, headers: { ...CORS, 'Content-Type': 'application/json', 'Cache-Control': 'no-store' } });
 }
-async function ensure(db) { if (!ready) ready = db.batch(SCHEMA.map(s => db.prepare(s))).catch(e => { ready = null; throw e; }); return ready; }
+/* the tables are also in schema.sql; creating them here means a fresh deploy works before anyone runs it */
+async function ensure(db) {
+  if (!ready) ready = (async () => { for (const s of SCHEMA) { try { await db.prepare(s).run(); } catch (e) { ready = null; throw e; } } })();
+  return ready;
+}
 async function current(db, id) {
   const r = await db.prepare('SELECT rev, state FROM tt_saves WHERE player = ?').bind(id).first();
   return r ? { rev: r.rev, state: JSON.parse(r.state) } : { rev: 0, state: null };
