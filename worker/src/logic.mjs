@@ -7,7 +7,7 @@ const num = v => (typeof v === 'number' && isFinite(v)) ? v : 0;
 const clone = o => JSON.parse(JSON.stringify(o));
 const delta = (a, b) => num(a) - num(b);
 
-export const KIDS = ['charlie', 'riley', 'vera', 'cora', 'addie', 'amy', 'hallie'];
+export const KIDS = ['charlie', 'riley', 'yan'];
 
 export function mergeState(mine, theirs, base) {
   mine = isObj(mine) ? mine : {}; theirs = isObj(theirs) ? theirs : {}; base = isObj(base) ? base : {};

@@ -13,7 +13,8 @@ const TAU=Math.PI*2;
 const WK=['lagoon','candy','canopy','ocean','bows','boba','birds'];
 const WNAME={lagoon:'Lagoon',candy:'Sweetshop',canopy:'Rainforest',ocean:'Ocean',bows:'Bow Boutique',boba:'Boba Shop',birds:'Terror Birds'};
 const WGRAD={lagoon:'linear-gradient(135deg,#CFF0F1,#9BDCE0)',candy:'linear-gradient(135deg,#FFF3F8,#FFD3E6)',canopy:'linear-gradient(135deg,#E4F3D6,#AFDA95)',ocean:'linear-gradient(135deg,#E3E7FF,#B9C3F5)',bows:'linear-gradient(135deg,#FFF0F6,#F8C8DD)',boba:'linear-gradient(135deg,#FFF6EC,#F5D9BD)',birds:'linear-gradient(135deg,#F6E9CF,#E6CFA3)'};
-const KIDS=[{id:'charlie',name:'Charlie',theme:'candy'},{id:'riley',name:'Riley',theme:'lagoon'},{id:'vera',name:'Vera',theme:'canopy'},{id:'cora',name:'Cora',theme:'ocean'},{id:'addie',name:'Addie',theme:'bows'},{id:'amy',name:'Amy',theme:'boba'},{id:'hallie',name:'Hallie',theme:'birds'}];
+/* the players: Charlie and Riley, plus Yan as the test account (Yan, 10/14/2026) */
+const KIDS=[{id:'charlie',name:'Charlie',theme:'candy'},{id:'riley',name:'Riley',theme:'lagoon'},{id:'yan',name:'Yan',theme:'birds'}];
 const CHAR_COST=[0,40,90,150,220,300];
 const ACOL={lagoon:['#2FAFC4','#1F9C72','#E8809B','#7A5CC9'],candy:['#F0468C','#3DA9E0','#1FB98A','#F5A623'],canopy:['#E07A2E','#2E9E5B','#2FA3B8','#B04FC2'],ocean:['#6A48F5','#0F8378','#F06292','#3B66E6'],bows:['#C92A6E','#7447D6','#0F8378','#E08A2E'],boba:['#8A4FC2','#B4532A','#0F8378','#C9336E'],birds:['#C2552B','#2E8B57','#2F7F9E','#8A5CC9']};
 const CCOL={lagoon:['#BFF3F6'],candy:['#FF8FC8','#FF5C8A','#F5C842','#5CC97A','#5CB8F0','#B98CF0'],canopy:['#FF9A3C','#F25C54','#F5B82E','#E07A2E','#9CC23A'],ocean:['#C9A7FF','#FF9AD5','#7FDBFF','#B388FF','#9DB4FF'],bows:['#FF7EB6','#B98CF0','#FF9CC8','#FF5C8A','#7FC8FF'],boba:['#4A2C1E'],birds:['#F2A54A','#D9772B','#9CC23A','#7FC8FF','#F8DFB8']};
